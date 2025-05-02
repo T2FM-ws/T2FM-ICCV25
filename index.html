@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>T2FM Workshop @ ICCV 2025</title>
+<meta content="T2FM Workshop - Trustworthy Foundation Models" name="description"/>
+<link href="favicon.svg" rel="icon"/>
+<!-- Bulma CSS for layout -->
+<link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"/>
+<!-- Font Awesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<!-- Custom CSS -->
+<style>
+    body { background-color: #f8f8f8; }
+    .hero {
+      position: relative;
+      background: url('data/teaser.png') center/cover no-repeat;
+      color: #222;
+      padding: 5rem 1.5rem;
+      background-attachment: fixed;
+    }
+    .hero::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(255, 255, 255, 0.4); 
+        z-index: 0;
+      }
+      
+      .hero > .container {
+        position: relative;
+        z-index: 1;
+      }
+    .button-nav a {
+      margin: 0 0.5rem;
+      background: rgba(255,255,255,0.8);
+      border-radius: 8px;
+    }
+    .section-title {
+      color: #4a4a4a;
+      margin-bottom: 1rem;
+    }
+    .card-content p {
+      margin-bottom: 0.25rem;
+    }
+    .footer {
+      background-color: #fafafa;
+      padding: 2rem 1.5rem;
+      font-size: 0.9rem;
+    }
+    .round-avatar {
+      width: 125px;
+      height: 125px;
+      object-fit: cover;
+      border-radius: 8px;
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      margin-left: calc(50% + 20px);
+      transform: translateX(0%);
+      box-shadow: 0 0 0 3px white, 0 0 6px rgba(0,0,0,0.1);
+    }
+    .round-avatar2 {
+        width: 125px;
+        height: 125px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+        margin-left: calc(50%);
+        transform: translateX(-10%);
+        box-shadow: 0 0 0 3px white, 0 0 6px rgba(0,0,0,0.1);
+      }
+    .organizer-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+      padding: 1rem 0.5rem;
+    }
+    .organizer-card .card-content {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0.75rem;
+    }
+    .card-image figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      .columns.is-multiline .column.is-one-eighth {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+      }
+    }
+    @media (max-width: 480px) {
+      .columns.is-multiline .column.is-one-eighth {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+<!-- Header -->
+<section class="hero is-medium is-bold">
+<div class="container has-text-centered">
+<h1 class="title is-1">🔒 Trustworthy FMs Workshop</h1>
+<h2 class="subtitle is-3">From Classical Models to Foundation Models</h2>
+<p class="subtitle is-5">
+        📍 In conjunction with <strong>ICCV 2025</strong> — Oct. 19–23, Honolulu, Hawai'i
+      </p>
+<div class="button-nav mt-4">
+<a class="button is-primary" href="index.html">Overview</a>
+<a class="button is-primary" href="cfp.html">Call for Papers</a>
+<a class="button is-primary" href="speakers.html">Invited Speakers</a>
+<a class="button is-primary" href="organizers.html">Senior Organizers</a>
+<a class="button is-primary" href="pcmember.html">Organizers</a>
+</div>
+</div>
+</section>
+<!-- Overview -->
+<section class="section" id="overview">
+<div class="container">
+<h2 class="title section-title">🔎 Overview</h2>
+<div class="content">
+<p>
+          From <strong>AlexNet</strong> to <strong>LLaVA</strong>, everything changes—but the challenges of trustworthiness remain.
+          In the era of foundation models, new questions arise: 
+          <em>What does trustworthiness mean at scale?</em>
+<em>Can insights from classical deep learning still guide us?</em>
+</p>
+<p>
+          This workshop brings together researchers and practitioners to explore the <strong>latest developments</strong> in trustworthy foundation models. We aim to examine the <strong>intersection of classical methods and modern FMs</strong>, and foster open discussions on robustness, fairness, interpretability, and accountability.
+        </p>
+</div>
+</div>
+</section>
+<!-- Call for Papers -->
+<section class="section" id="cfp">
+<div class="container">
+<h2 class="title section-title">📣 Call for Papers</h2>
+<p>
+        We welcome <strong>short</strong> (4-page) and <strong>full-length</strong> (8-page) submissions on topics related to
+        <em>trustworthy foundation models</em> and their applications. 
+        <br/>Accepted papers will <strong>not</strong> be published in proceedings, allowing future resubmission.
+      </p>
+<br/>
+<p><strong>Topics of interest include (but are not limited to):</strong></p>
+<div class="content" style="margin-left: 1rem;">
+<ul>
+<li>🧠 Machine unlearning for foundation models</li>
+<li>🧭 Bias discovery and mitigation in large-scale foundation models</li>
+<li>🛡️ Adversarial attacks and defenses in foundation models</li>
+<li>📏 Robustness and generalization in trustworthy foundation models</li>
+<li>⚖️ Fairness-aware training and evaluation</li>
+<li>🔍 Explainability and interpretability for large/black-box models</li>
+<li>🧪 Ethical concerns and responsible deployment</li>
+<li>📊 Benchmarks for foundation model trustworthiness</li>
+<li>📉 Uncertainty quantification</li>
+<li>🔐 Data provenance and security</li>
+</ul>
+</div>
+<br/>
+<p><strong>🗓 Submission Deadline:</strong> August 1, 2025</p>
+<p><strong>📬 Notification:</strong> August 16, 2025</p>
+<p><strong>🔗 Submit via:</strong>
+<a href="https://zhangaipi.github.io/T2FM/#overview" target="_blank">
+          OpenReview
+        </a>
+</p>
+</div>
+</section>
+<!-- Speakers -->
+<section class="section" id="speakers">
+<div class="container">
+<h2 class="title section-title">Invited Speakers</h2>
+<!-- First row: 3 speakers -->
+<div class="columns is-centered">
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 1" class="is-rounded" src="data/Salman_Avestimehr.jpg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://www.avestimehr.com/" target="_blank">Salman Avestimehr</a></p>
+<p class="subtitle is-6">University of Southern California / FedML</p>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 2" class="is-rounded" src="data/YaoQin.jpg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://yaoqin1.github.io/" target="_blank">Yao Qin</a></p>
+<p class="subtitle is-6">UC Santa Barbara / DeepMind</p>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 3" class="is-rounded" src="data/shaoron.jpg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://pages.cs.wisc.edu/~sharonli/" target="_blank">Sharon Li</a></p>
+<p class="subtitle is-6">University of Wisconsin Madison</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Second row: 2 speakers -->
+<div class="columns is-centered">
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 4" class="is-rounded" src="data/chengzhi.jpg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://www.cs.columbia.edu/~mcz/" target="_blank">Chengzhi Mao</a></p>
+<p class="subtitle is-6">Google</p>
+</div>
+</div>
+</div>
+<div class="column is-one-third">
+<div class="card">
+<div class="card-content has-text-centered">
+<figure class="image is-128x128 is-inline-block">
+<img alt="Speaker 5" class="is-rounded" src="data/Mazda_Moayeri.jpeg"/>
+</figure>
+<p class="title is-5 mt-3"><a href="https://sites.google.com/umd.edu/mazdamoayeri" target="_blank">Mazda Moayeri</a></p>
+<p class="subtitle is-6">Meta</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+<div class="content has-text-centered">
+<p>
+        Contact: <a href="mailto:t2fm_workshop@googlegroups.com">t2fm_workshop@googlegroups.com</a><br/>
+        Website template adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a><br/>
+        Licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>
+</p>
+</div>
+</footer>
+</body>
+</html>
